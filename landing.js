@@ -45,5 +45,3 @@ document.getElementById("generate-btn").addEventListener("click", async function
 };
 //APPLY FUNCTION TO BUTTON BY ADDING EVENT LISTENER TO BUTTON
 document.getElementById("generate-btn").addEventListener("click",hideDiv);
-
-
