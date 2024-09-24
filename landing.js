@@ -1,10 +1,3 @@
-// function myFunction() {
-//     var x = document.getElementById("result-div");
-//     if (x.style.display === "none") {
-//       x.style.display = "block";
-//     } 
-//   }
-
 
 document.getElementById("generate-btn").addEventListener("click", async function() {
     const url = 'https://baby-names-by-api-ninjas.p.rapidapi.com/v1/babynames';
@@ -22,8 +15,8 @@ document.getElementById("generate-btn").addEventListener("click", async function
   
       
   
-      const result = await response.text();
-      
+      const result = await response.json();
+      console.log(result);
       // Display the result
       document.getElementById("result").innerText = result;
     } catch (error) {
@@ -43,5 +36,6 @@ document.getElementById("generate-btn").addEventListener("click", async function
         hiddenDiv.classList.add("result-div");
     }
 };
+
 //APPLY FUNCTION TO BUTTON BY ADDING EVENT LISTENER TO BUTTON
 document.getElementById("generate-btn").addEventListener("click",hideDiv);
