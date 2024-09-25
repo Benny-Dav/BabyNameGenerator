@@ -10,6 +10,7 @@ body {
 
 section {
     height: 90vh;
+    
 
 }
 
@@ -17,6 +18,8 @@ section {
     height: 40%;
     border: none;
     padding-top: 3em;
+    display:flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -25,10 +28,18 @@ h1 {
     font-size: 3em;
     font-weight: 600;
     margin-bottom: 0.6em;
+    
 }
 
-
+.gender-select{
+   border:2px solid;
+  height:10%;
+  margin-bottom:auto;
+   
+}
 button {
+    
+   
     width: 30%;
     padding: 1em;
     font-size: 1.5em;
@@ -40,6 +51,7 @@ button {
     border: none;
     border-radius: 20px;
     color: white;
+    
 }
 
 #hiddenDiv {
@@ -48,6 +60,7 @@ button {
     /* background-color: white;  */
     /* background:url("./assets/result-background.mp4");
     background-size: cover; */
+    
     height: 40%;
     width: 80%;
     margin-left: 10%;
