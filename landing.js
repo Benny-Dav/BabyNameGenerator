@@ -1,6 +1,26 @@
 
+
+ // FUNCTION TO CORRESPOND RADIO SELECTION TO GENDER
+ let gender;
+ //grab radio buttons
+ const radioBtn = document.querySelectorAll('input[name="option"]');
+ console.log(radioBtn);
+ //add event listnener to radio buttons
+ radioBtn.forEach(radio => {
+   radio.addEventListener('change', () => {
+       // Update the selectedValue variable with the value of the selected radio button
+       gender = radio.value;
+
+       // Display the selected value on the page
+       document.getElementById('gender').innerText = gender;
+   });
+ });
+
+
+
+
 document.getElementById("generate-btn").addEventListener("click", async function() {
-    const url = 'https://baby-names-by-api-ninjas.p.rapidapi.com/v1/babynames';
+    const url = 'https://baby-names-by-api-ninjas.p.rapidapi.com/v1/babynames?gender='+gender;
     const options = {
       method: 'GET',
       headers: {
