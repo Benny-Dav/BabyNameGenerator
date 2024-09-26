@@ -32,18 +32,29 @@ h1 {
 }
 
 .gender-select{
-   border:2px solid;
+  margin-left:auto;
+  margin-right:auto;
   height:10%;
-  margin-bottom:auto;
-   
+   margin-bottom:2em;
+}
+label{
+   font-size:1.5em;
+}
+.input-radio1{
+    accent-color:blue;
+}
+.input-radio2{
+    accent-color:#DC143C;
+}
+.input-radio3{
+    accent-color:black;
 }
 button {
-    
-   
+
     width: 30%;
     padding: 1em;
-    font-size: 1.5em;
-    margin-left: 35%;
+    font-size: 1.3em;
+    margin-left: auto;
     margin-right: auto;
     font-weight: 600;
     background-color: rgb(228, 21, 95);
@@ -51,7 +62,7 @@ button {
     border: none;
     border-radius: 20px;
     color: white;
-    
+
 }
 
 #hiddenDiv {
@@ -60,7 +71,7 @@ button {
     /* background-color: white;  */
     /* background:url("./assets/result-background.mp4");
     background-size: cover; */
-    
+    margin-top:1em;
     height: 40%;
     width: 80%;
     margin-left: 10%;
@@ -72,7 +83,8 @@ button {
 }
 
 .result-div {
-    display:none;   
+    display:none; 
+     
 }
 
 video {
@@ -98,7 +110,9 @@ h3 {
     text-align: center;
     font-style: italic;
     animation: fadeIn 2s ease-in-out;
-
+    width:80%;
+    margin:auto;
+    word-wrap: break-word;
 }
 
 @keyframes fadeIn {
@@ -114,4 +128,19 @@ h3 {
 footer p {
     font-size: 18px;
     text-align: center;
+}
+
+@media(max-width:800px){
+    h1{
+        font-size:2em;
+       
+    }
+    button{
+        padding:8px;
+        width:40%;
+        margin-bottom:0.5em;
+    }
+    .hiddenDiv{
+        height:30%;
+    }
 }

@@ -36,7 +36,7 @@ document.getElementById("generate-btn").addEventListener("click", async function
       
   
       const result = await response.json();
-      console.log(result);
+      console.log("Result : " + result);
       // Display the result
       document.getElementById("result").innerText = result;
     } catch (error) {
